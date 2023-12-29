@@ -1,0 +1,2 @@
+# my vscode extension template
+
