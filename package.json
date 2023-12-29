@@ -5,7 +5,8 @@
     "eslint": "eslint .",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier . --write",
-    "test": "vitest run"
+    "test": "vitest run",
+    "package": "pnpm run build && vsce package --no-dependencies"
   },
   "main": "./dist/extension.cjs",
   "activationEvents": [
