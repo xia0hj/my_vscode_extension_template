@@ -9,7 +9,7 @@
       "script": "build",
       "presentation": {
         "reveal": "never"
-      },
+      }
     }
   ]
 }

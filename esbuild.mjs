@@ -1,5 +1,5 @@
 //@ts-check
-import * as esbuild from 'esbuild'
+import * as esbuild from "esbuild";
 
 /**
  * @type {import('esbuild').BuildOptions}
@@ -11,12 +11,12 @@ const buildOption = {
   sourcemap: true,
   treeShaking: true,
   define: {
-    'import.meta.vitest': 'undefined'
+    "import.meta.vitest": "undefined",
   },
-  platform: 'node',
-  external: ['vscode'],
-  format: 'cjs',
-  outfile: 'dist/extension.cjs'
-}
+  platform: "node",
+  external: ["vscode"],
+  format: "cjs",
+  outfile: "dist/extension.cjs",
+};
 
-esbuild.buildSync(buildOption)
+esbuild.buildSync(buildOption);
