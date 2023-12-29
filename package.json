@@ -1,5 +1,4 @@
 {
-  "packageManager": "pnpm@8.12.1",
   "scripts": {
     "build": "node esbuild.mjs",
     "eslint": "eslint .",
@@ -20,6 +19,7 @@
   "displayName": "My extension",
   "version": "0.0.0",
   "devDependencies": {
+    "@types/node": "^18.15.0",
     "@types/vscode": "^1.85.0",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
@@ -32,7 +32,5 @@
   },
   "private": true,
   "license": "MIT",
-  "dependencies": {
-    "@types/node": "^18.15.0"
-  }
+  "packageManager": "pnpm@8.12.1"
 }
