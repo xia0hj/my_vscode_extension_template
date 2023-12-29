@@ -25,6 +25,7 @@ const eslintConfig = {
   },
   plugins: ["@typescript-eslint"],
   rules: {},
+  ignorePatterns: ["dist"],
 };
 
 module.exports = eslintConfig;
