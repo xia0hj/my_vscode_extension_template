@@ -1,0 +1,30 @@
+{
+  "packageManager": "pnpm@8.12.1",
+  "scripts": {
+    "build": "node esbuild.mjs"
+  },
+
+  "main": "./dist/extension.cjs",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "publisher": "me",
+  "name": "my-vscode-extension-template",
+  "displayName": "My extension",
+  "version": "0.0.0",
+
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0",
+    "esbuild": "^0.19.10",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "vitest": "^1.1.0"
+  },
+
+  "private": true,
+  "license": "MIT"
+}
