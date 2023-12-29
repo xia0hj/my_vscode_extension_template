@@ -4,7 +4,8 @@
     "build": "node esbuild.mjs",
     "eslint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "test": "vitest run"
   },
   "main": "./dist/extension.cjs",
   "activationEvents": [
