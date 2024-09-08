@@ -26,10 +26,8 @@ export default tseslint.config(
     },
 );
 
-/**
- * This tells VS Code to not show errors in your editor, but still have the ability to auto-fix them.
- * You can also set "severity": "info" to keep squiggly lines but not have them look like errors.
- */
+// This tells VS Code to not show errors in your editor, but still have the ability to auto-fix them.
+// You can also set "severity": "info" to keep squiggly lines but not have them look like errors.
 // {
 //   "eslint.rules.customizations": [
 //     {
