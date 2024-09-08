@@ -1,9 +1,8 @@
 {
   "scripts": {
     "build": "node esbuild.mjs",
-    "eslint": "eslint .",
+    "eslint": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "prettier": "prettier . --write",
     "test": "vitest run",
     "package": "npm run build && vsce package --no-dependencies"
   },
@@ -19,18 +18,17 @@
   "displayName": "My extension",
   "version": "0.0.0",
   "devDependencies": {
-    "@types/node": "^22.5.4",
+    "@eslint/js": "^9.10.0",
+    "@stylistic/eslint-plugin": "^2.7.2",
+    "@types/eslint__js": "^8.42.3",
     "@types/vscode": "^1.93.0",
-    "@typescript-eslint/eslint-plugin": "^8.4.0",
-    "@typescript-eslint/parser": "^8.4.0",
     "@vscode/vsce": "^3.1.0",
     "esbuild": "^0.23.1",
     "eslint": "^9.10.0",
-    "prettier": "^3.3.3",
     "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0",
     "vitest": "^2.0.5"
   },
   "private": true,
-  "license": "MIT",
-  "packageManager": "pnpm@8.12.1"
+  "license": "MIT"
 }
